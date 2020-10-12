@@ -4,13 +4,11 @@ import java.util.Scanner;
 public class Operacao {
 	
 	double resultado;
-
-	Continua cont = new Continua();
-	Calculo calc = new Calculo();
-	
 	
 	//faz o calculo se for válido.. foi decisão minha fazer só um método para todas as 4 operações
 	public void operacao (int operacao, double nro1, double nro2) {
+		Calculo calc = new Calculo();
+		Continua cont = new Continua();
 		if (operacao == 1) {
 			resultado = nro1 + nro2;
 			System.out.println("O resultado é "+resultado);
