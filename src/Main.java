@@ -13,7 +13,7 @@ public class Main {
 		scan.useLocale(Locale.ENGLISH);  //sem o locale eu não consegui fazer um scan do double utilizando . (ponto)
 		nro1 = scan.nextDouble();
 		nro2 = scan.nextDouble();
-		Operacoes obj = new Operacoes();
-		obj.numeros(nro1, nro2);
+		Calculo calc = new Calculo();
+		calc.numero(nro1, nro2);
 	}
 }
