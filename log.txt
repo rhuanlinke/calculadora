@@ -5,6 +5,8 @@ Conforme o feedback na Calculadora v01, retirei um pouco da lógica da classe Co
 
 Utilizei a View neste caso mais para armazenamento dos hard texts, pois ainda não tenho conhecimento de como criar uma interface visual.
 
+Sei que ainda tem coisas a melhorar, mas senti um grande avanço utilizando um pouco do MVC.
+
 Dificuldades:
 1. Tive dificuldade em utilizar a opção "JOptionPane" então segui utilizando o Scanner.
 2. Também tive dificuldade em retornar 2 valores no mesmo método.
