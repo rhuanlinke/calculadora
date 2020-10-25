@@ -3,35 +3,24 @@ import java.util.Scanner;
 
 public class Operacao {
 	
-	double resultado;
-	
 	//faz o calculo se for válido.. foi decisão minha fazer só um método para todas as 4 operações
-	public void operacao (int operacao, double nro1, double nro2) {
-		Calculo calc = new Calculo();
-		Continua cont = new Continua();
+	public void Operacao (int operacao, double nro1, double nro2) {
 		if (operacao == 1) {
-			resultado = nro1 + nro2;
-			System.out.println("O resultado é "+resultado);
-			cont.continua(nro1, nro2, resultado);
+			Soma soma = new Soma();
+			soma.Soma(nro1, nro2);
 		}
 		else if (operacao == 2) {
-			resultado = nro1 - nro2;
-			System.out.println("O resultado é "+resultado);
-			cont.continua(nro1, nro2, resultado);
+			Subtrai subt = new Subtrai();
+			subt.Subtrai(nro1, nro2);
 		}
 		else if (operacao == 3) {
-			resultado = nro1 / nro2;
-			System.out.println("O resultado é "+resultado);
-			cont.continua(nro1, nro2, resultado);
+			Divide divi = new Divide();
+			divi.Divide(nro1, nro2);
 		}
 		else if (operacao == 4) {
-			resultado = nro1 * nro2;
-			System.out.println("O resultado é "+resultado);
-			cont.continua(nro1, nro2, resultado);
+			Multiplica mult = new Multiplica();
+			mult.Multiplica(nro1, nro2);
+		
 		}
-		else {
-			System.out.println("Operador inválido");
-			calc.calculo(nro1, nro2);
-		}		
 	}
 }

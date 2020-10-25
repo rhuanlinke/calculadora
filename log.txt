@@ -1,0 +1,15 @@
+Entendi que seguindo o MVC precisaria de classes mais independentes, que não tem toda a inteligência dentro de si.
+Além disso uma classe Controller facilita na organização do código, pois somente ela entrará em contato com a main (evitando bagunça).
+
+Conforme o feedback na Calculadora v01, retirei um pouco da lógica da classe Continua e Calculo, e foquei elas na Controller.
+
+Utilizei a View neste caso mais para armazenamento dos hard texts, pois ainda não tenho conhecimento de como criar uma interface visual.
+
+Dificuldades:
+1. Tive dificuldade em utilizar a opção "JOptionPane" então segui utilizando o Scanner.
+2. Também tive dificuldade em retornar 2 valores no mesmo método.
+Dessa forma não funciona:	return (nro1, nro2);
+Portanto ao invés de retornar criei um novo método que recebe dois valores, e chamei esse método com os valores em questão.
+3. Meu método/classe Continua não estavam funcionando, eles transformavam o valor do primeiro número em zero (0) e não davam continuidade na operação do resultado.
+Tentei diversas formas armazenar o resultado em this.resultado do Controller, mas a informação sempre era apagada..
+Para corrigir isto tive que fazer uma passagem de parâmetro entre os métodos, levando a informação do resultado.
